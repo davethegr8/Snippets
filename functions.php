@@ -5,5 +5,5 @@ function factorial($n) {
 }
 
 function roundInterval($num, $interval) {
-	return round($num / $interval) * $interval;
+    return round($num / $interval) * $interval;
 }
