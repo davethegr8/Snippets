@@ -1,0 +1,23 @@
+/* from http://wtfhtmlcss.com/ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+table {
+  border-collapse: collapse;
+}
+
