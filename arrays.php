@@ -27,3 +27,9 @@ $data[] = array('volume' => 67, 'edition' => 7);
 
 // Pass the array, followed by the column names and sort flags
 $sorted = array_orderby($data, 'volume', SORT_DESC, 'edition', SORT_ASC);
+
+function array_collect($array, $property) {
+	return array_map(function ($item) use ($property) {
+		return $item[$property];
+	}, $array);
+}
